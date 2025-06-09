@@ -3,58 +3,76 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>韩世国际 - 官网首页</title>
+  <title>韩世国际 - 官方网站</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    @keyframes fadeInUp {
+      0% {
+        opacity: 0;
+        transform: translateY(40px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    .animate-fade-in-up {
+      animation: fadeInUp 1s ease-out forwards;
+    }
+  </style>
 </head>
 
-<body class="bg-gray-100 text-gray-800">
+<body class="bg-white text-gray-800 animate-fade-in-up">
 
   <!-- 导航栏 -->
-  <nav class="bg-blue-900 text-white px-4 py-3 shadow-md">
+  <nav class="bg-blue-900 text-white px-6 py-4 shadow-md sticky top-0 z-50">
     <div class="container mx-auto flex justify-between items-center">
-      <div class="text-lg font-bold">韩世国际</div>
+      <div class="text-2xl font-bold">韩世国际</div>
       <div class="space-x-4 text-sm">
-        <a href="index.html" class="hover:underline">首页</a>
-        <a href="about.html" class="hover:underline">关于我们</a>
-        <a href="services.html" class="hover:underline">服务项目</a>
-        <a href="join.html" class="hover:underline">加入我们</a>
-        <a href="contact.html" class="hover:underline">联系我们</a>
+        <a href="index.html" class="hover:text-yellow-300 transition">首页</a>
+        <a href="about.html" class="hover:text-yellow-300 transition">关于我们</a>
+        <a href="services.html" class="hover:text-yellow-300 transition">服务项目</a>
+        <a href="join.html" class="hover:text-yellow-300 transition">加入我们</a>
+        <a href="contact.html" class="hover:text-yellow-300 transition">联系我们</a>
       </div>
     </div>
   </nav>
 
-  <!-- Hero 区域 -->
-  <section class="text-center py-20 bg-gradient-to-r from-blue-600 to-purple-600 text-white">
-    <h1 class="text-4xl md:text-5xl font-bold mb-4">中韩连接者</h1>
-    <p class="text-lg mb-6">我们致力于搭建中韩之间的品牌、留学、社群和商务桥梁</p>
-    <a href="contact.html" class="bg-white text-blue-700 px-6 py-2 rounded-full shadow-md hover:bg-gray-100 transition">立即联系</a>
-  </section>
+  <!-- Hero 部分 -->
+  <header class="bg-gradient-to-r from-blue-600 to-purple-600 text-white py-24">
+    <div class="container mx-auto text-center px-4">
+      <h1 class="text-4xl md:text-5xl font-extrabold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-yellow-200 via-white to-yellow-200 animate-bounce">
+        搭建中韩之间的连接桥梁
+      </h1>
+      <p class="text-lg md:text-xl mb-8 animate-fade-in-up">
+        让中韩沟通更高效 · 更可信 · 更有温度
+      </p>
+      <a href="contact.html"
+         class="inline-block bg-yellow-400 text-blue-900 font-semibold px-8 py-3 rounded-full shadow-md
+                hover:bg-yellow-500 hover:scale-105 hover:shadow-lg transition duration-300 ease-in-out">
+        立即联系
+      </a>
+    </div>
+  </header>
 
-  <!-- 特色展示 -->
-  <section class="container mx-auto px-4 py-16">
-    <h2 class="text-2xl font-bold mb-8 text-center text-blue-800">我们的服务</h2>
-    <div class="grid gap-8 md:grid-cols-2">
-      <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition">
-        <h3 class="text-xl font-semibold mb-2 text-blue-700">📘 留学咨询</h3>
-        <p>中韩两地升学规划，院校申请，语言培训，生活协助一站式服务。</p>
-      </div>
-      <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition">
-        <h3 class="text-xl font-semibold mb-2 text-blue-700">📣 品牌出海</h3>
-        <p>助力中国品牌落地韩国，市场调研、选品定位、线上线下推广。</p>
-      </div>
-      <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition">
-        <h3 class="text-xl font-semibold mb-2 text-blue-700">🌐 跨境商务</h3>
-        <p>提供中韩 B2B 贸易咨询、商务陪同、翻译与供应链连接。</p>
-      </div>
-      <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition">
-        <h3 class="text-xl font-semibold mb-2 text-blue-700">🤝 社群运营</h3>
-        <p>打造留学生/华人社群，线上线下活动丰富，资源共享交流平台。</p>
-      </div>
+  <!-- 简介卡片 -->
+  <section class="container mx-auto py-16 px-6 grid gap-8 md:grid-cols-3">
+    <div class="bg-white p-6 rounded-lg shadow hover:shadow-xl transition hover:-translate-y-1">
+      <h3 class="text-xl font-bold text-blue-700 mb-2">📘 留学服务</h3>
+      <p>中韩升学指导，院校申请与留学规划，一站式服务支持。</p>
+    </div>
+    <div class="bg-white p-6 rounded-lg shadow hover:shadow-xl transition hover:-translate-y-1">
+      <h3 class="text-xl font-bold text-blue-700 mb-2">🌍 品牌出海</h3>
+      <p>中国品牌落地韩国，打造本地化运营解决方案与资源对接。</p>
+    </div>
+    <div class="bg-white p-6 rounded-lg shadow hover:shadow-xl transition hover:-translate-y-1">
+      <h3 class="text-xl font-bold text-blue-700 mb-2">🤝 商务合作</h3>
+      <p>跨境项目落地执行、B2B 对接、展会参展及谈判支持。</p>
     </div>
   </section>
 
   <!-- 页脚 -->
-  <footer class="bg-blue-900 text-white text-center text-sm py-4">
+  <footer class="bg-blue-900 text-white text-center text-sm py-6">
     版权所有 © 韩世国际株式会社 · 2025
   </footer>
 
