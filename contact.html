@@ -3,103 +3,56 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>联系我们 - 韩世国际株式会社</title>
-  <meta name="description" content="联系我们，了解韩世国际的合作、服务和更多信息。" />
-  <meta name="author" content="韩世国际" />
-  <meta property="og:title" content="联系我们 - 韩世国际株式会社" />
-  <meta property="og:description" content="韩世国际联系方式、地址、微信二维码，欢迎沟通合作。" />
-  <meta property="og:url" content="https://smida-3.vercel.app/contact.html" />
-
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #f4f6f9;
-      margin: 0;
-      padding: 0;
-    }
-
-    .nav {
-      text-align: center;
-      background-color: #003478;
-      padding: 15px 0;
-    }
-    .nav a {
-      color: white;
-      text-decoration: none;
-      margin: 0 15px;
-      font-weight: bold;
-      font-size: 16px;
-    }
-    .nav a:hover {
-      text-decoration: underline;
-    }
-
-    .container {
-      max-width: 800px;
-      margin: 40px auto;
-      background: white;
-      padding: 40px;
-      border-radius: 12px;
-      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-      text-align: center;
-    }
-
-    h1 {
-      color: #003478;
-      margin-bottom: 30px;
-    }
-
-    .info {
-      font-size: 16px;
-      line-height: 2;
-      color: #333;
-    }
-
-    .qr-code {
-      margin: 30px 0;
-    }
-
-    .qr-code img {
-      width: 180px;
-      border: 1px solid #ddd;
-      border-radius: 8px;
-    }
-
-    .footer {
-      margin-top: 40px;
-      text-align: center;
-      font-size: 13px;
-      color: gray;
-    }
-  </style>
+  <title>联系我们 - 韩世国际</title>
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body>
-  <div class="nav">
-    <a href="index.html">🏠 首页</a>
-    <a href="about.html">关于我们</a>
-    <a href="services.html">服务项目</a>
-    <a href="join.html">加入我们</a>
-    <a href="contact.html">联系我们</a>
-  </div>
+<body class="bg-gray-100 text-gray-800">
 
-  <div class="container">
-    <h1>联系我们</h1>
-
-    <p class="info">
-      📍 地址：韩国 首尔特别市 麻浦区 弘益路 XXX号<br />
-      📧 邮箱：contact@hanshiglobal.com<br />
-      📱 微信号：HanshiGlobal<br />
-    </p>
-
-    <div class="qr-code">
-      <p>👇 微信扫码添加我们</p>
-      <img src="weixin_qrcode.jpg" alt="微信二维码" />
+  <!-- 导航栏 -->
+  <nav class="bg-blue-900 text-white px-4 py-3 shadow-md">
+    <div class="container mx-auto flex justify-between items-center">
+      <div class="text-lg font-bold">韩世国际</div>
+      <div class="space-x-4 text-sm">
+        <a href="index.html" class="hover:underline">首页</a>
+        <a href="about.html" class="hover:underline">关于我们</a>
+        <a href="services.html" class="hover:underline">服务项目</a>
+        <a href="join.html" class="hover:underline">加入我们</a>
+        <a href="contact.html" class="hover:underline">联系我们</a>
+      </div>
     </div>
+  </nav>
 
-    <div class="footer">
-      版权所有 © 韩世国际株式会社 · 2025
+  <!-- 联系我们内容 -->
+  <section class="container mx-auto px-4 py-16">
+    <h1 class="text-3xl font-bold text-center text-blue-800 mb-10">联系我们</h1>
+
+    <div class="bg-white rounded-lg shadow p-6 md:flex items-center space-y-8 md:space-y-0 md:space-x-8">
+      
+      <!-- 左侧：联系方式 -->
+      <div class="flex-1 space-y-4">
+        <p class="text-lg">欢迎通过以下方式与我们取得联系：</p>
+        <ul class="space-y-2 text-gray-700">
+          <li>📧 邮箱：<span class="font-mono text-base">hello@hanshiglobal.com</span></li>
+          <li>📱 微信：<span class="font-semibold">hanshiglobal</span></li>
+          <li>📍 地址：首尔 麻浦区 弘益大学附近</li>
+        </ul>
+        <p class="mt-4 text-blue-700">如需合作、留学咨询、品牌服务请添加微信或发送邮件。</p>
+      </div>
+
+      <!-- 右侧：二维码 -->
+      <div class="flex-shrink-0 text-center">
+        <img src="weixin_qrcode.jpg" alt="微信二维码" class="w-40 mx-auto rounded shadow" />
+        <p class="text-sm text-gray-500 mt-2">扫码添加微信咨询</p>
+      </div>
+
     </div>
-  </div>
+  </section>
+
+  <!-- 页脚 -->
+  <footer class="bg-blue-900 text-white text-center text-sm py-4">
+    版权所有 © 韩世国际株式会社 · 2025
+  </footer>
+
 </body>
 </html>
