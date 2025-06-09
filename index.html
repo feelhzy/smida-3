@@ -3,109 +3,60 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>韩世国际株式会社官网</title>
-  <meta name="description" content="韩世国际是一家服务于中韩文化教育交流的跨国综合服务公司。" />
-  <meta name="author" content="韩世国际" />
-  <meta property="og:title" content="韩世国际株式会社官网" />
-  <meta property="og:description" content="致力于中韩文化、教育、商务交流的平台。" />
-  <meta property="og:image" content="https://your-image-link.jpg" />
-  <meta property="og:url" content="https://smida-3.vercel.app" />
-
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #f4f6f9;
-      margin: 0;
-      padding: 0;
-    }
-
-    .nav {
-      text-align: center;
-      background-color: #003478;
-      padding: 15px 0;
-    }
-    .nav a {
-      color: white;
-      text-decoration: none;
-      margin: 0 15px;
-      font-weight: bold;
-      font-size: 16px;
-    }
-    .nav a:hover {
-      text-decoration: underline;
-    }
-
-    .container {
-      max-width: 800px;
-      margin: 40px auto;
-      background: white;
-      padding: 40px;
-      border-radius: 12px;
-      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-      text-align: center;
-    }
-
-    h1 {
-      color: #003478;
-      margin-bottom: 20px;
-    }
-
-    p {
-      font-size: 16px;
-      color: #333;
-      line-height: 1.7;
-      margin-bottom: 25px;
-    }
-
-    .button {
-      display: inline-block;
-      background-color: #003478;
-      color: white;
-      padding: 12px 24px;
-      text-decoration: none;
-      border-radius: 6px;
-      font-weight: bold;
-    }
-
-    .footer {
-      margin-top: 40px;
-      font-size: 13px;
-      color: gray;
-    }
-
-    img {
-      width: 100%;
-      max-width: 600px;
-      border-radius: 10px;
-      margin-bottom: 25px;
-    }
-  </style>
+  <title>韩世国际 - 官网首页</title>
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body>
-  <div class="nav">
-    <a href="index.html">🏠 首页</a>
-    <a href="about.html">关于我们</a>
-    <a href="services.html">服务项目</a>
-    <a href="join.html">加入我们</a>
-  </div>
+<body class="bg-gray-100 text-gray-800">
 
-  <div class="container">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Flag_of_South_Korea.svg/640px-Flag_of_South_Korea.svg.png" alt="韩世国际 logo">
-    
-    <h1>欢迎访问韩世国际株式会社</h1>
-    <p>
-      韩世国际是一家位于韩国首尔的综合型服务公司，专注于中韩文化、教育、商业交流领域，致力于为全球华人提供留学咨询、品牌出海、企业对接、语言培训等服务。
-    </p>
-    <p>
-      我们相信中韩之间拥有无限的合作潜力，而韩世愿成为你在韩国最值得信赖的桥梁与伙伴。
-    </p>
-
-    <a class="button" href="about.html">了解更多</a>
-
-    <div class="footer">
-      版权所有 © 韩世国际株式会社 · 2025
+  <!-- 导航栏 -->
+  <nav class="bg-blue-900 text-white px-4 py-3 shadow-md">
+    <div class="container mx-auto flex justify-between items-center">
+      <div class="text-lg font-bold">韩世国际</div>
+      <div class="space-x-4 text-sm">
+        <a href="index.html" class="hover:underline">首页</a>
+        <a href="about.html" class="hover:underline">关于我们</a>
+        <a href="services.html" class="hover:underline">服务项目</a>
+        <a href="join.html" class="hover:underline">加入我们</a>
+        <a href="contact.html" class="hover:underline">联系我们</a>
+      </div>
     </div>
-  </div>
+  </nav>
+
+  <!-- Hero 区域 -->
+  <section class="text-center py-20 bg-gradient-to-r from-blue-600 to-purple-600 text-white">
+    <h1 class="text-4xl md:text-5xl font-bold mb-4">中韩连接者</h1>
+    <p class="text-lg mb-6">我们致力于搭建中韩之间的品牌、留学、社群和商务桥梁</p>
+    <a href="contact.html" class="bg-white text-blue-700 px-6 py-2 rounded-full shadow-md hover:bg-gray-100 transition">立即联系</a>
+  </section>
+
+  <!-- 特色展示 -->
+  <section class="container mx-auto px-4 py-16">
+    <h2 class="text-2xl font-bold mb-8 text-center text-blue-800">我们的服务</h2>
+    <div class="grid gap-8 md:grid-cols-2">
+      <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition">
+        <h3 class="text-xl font-semibold mb-2 text-blue-700">📘 留学咨询</h3>
+        <p>中韩两地升学规划，院校申请，语言培训，生活协助一站式服务。</p>
+      </div>
+      <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition">
+        <h3 class="text-xl font-semibold mb-2 text-blue-700">📣 品牌出海</h3>
+        <p>助力中国品牌落地韩国，市场调研、选品定位、线上线下推广。</p>
+      </div>
+      <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition">
+        <h3 class="text-xl font-semibold mb-2 text-blue-700">🌐 跨境商务</h3>
+        <p>提供中韩 B2B 贸易咨询、商务陪同、翻译与供应链连接。</p>
+      </div>
+      <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition">
+        <h3 class="text-xl font-semibold mb-2 text-blue-700">🤝 社群运营</h3>
+        <p>打造留学生/华人社群，线上线下活动丰富，资源共享交流平台。</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 页脚 -->
+  <footer class="bg-blue-900 text-white text-center text-sm py-4">
+    版权所有 © 韩世国际株式会社 · 2025
+  </footer>
+
 </body>
 </html>
